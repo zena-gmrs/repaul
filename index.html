@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HAPPY Birthday REPAUL </title>
+  <title>HAPPY BIRTHDAY REPAUL</title>
+
   <style>
     body{
       margin:0;
-      background:black;
+      background: radial-gradient(circle, #1a0000, black);
       color:#ff0000;
       font-family:Arial;
       overflow:hidden;
+      text-align:center;
     }
 
     .center{
@@ -17,17 +19,15 @@
       align-items:center;
       justify-content:center;
       height:100vh;
-      text-align:center;
     }
 
     h1{
-      font-size:38px;
       text-shadow:0 0 15px red;
       margin-bottom:10px;
     }
 
     button{
-      padding:12px 22px;
+      padding:12px 20px;
       background:#ff0000;
       border:none;
       color:white;
@@ -64,24 +64,27 @@
       margin-top:20px;
     }
 
-    .card img{
+    .card{
+      position:relative;
+    }
+
+    img{
       width:220px;
       height:280px;
       object-fit:cover;
       border:2px solid red;
-      box-shadow:0 0 25px red;
-      animation:pulse 1.5s infinite;
+      box-shadow:0 0 25px red, 0 0 60px rgba(255,0,0,0.3);
+      transition:0.3s;
     }
 
-    @keyframes pulse{
-      0%{transform:scale(1)}
-      50%{transform:scale(1.03)}
-      100%{transform:scale(1)}
+    img:hover{
+      transform:scale(1.05);
+      filter:brightness(1.2) contrast(1.2);
     }
 
     .name{
       margin-top:10px;
-      font-size:14px;
+      text-shadow:0 0 10px red;
     }
 
     .glitch{
@@ -130,7 +133,7 @@
 
     <div class="card">
       <img src="rempong.jpeg">
-      <div class="name">PACARNYA DANTE </div>
+      <div class="name">PACAR DANTE</div>
     </div>
   </div>
 </div>
